@@ -59,9 +59,11 @@ for (var i = 0; i < names.length; i++) {
   // name in the loop.
   if (firstLetter === 'j') {
     byeSpeaker.speak(names[i]);
-  } else {
+  } else if (firstLetter === 'p') {
+    console.log ("Good Day " + names[i]);
+  }
+    else {
     helloSpeaker.speak(names[i]);
   }
 }
-
 })();
